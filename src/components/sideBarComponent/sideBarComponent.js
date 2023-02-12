@@ -3,8 +3,8 @@ import SideBarButton from './sideBarButtons/sideBarButton.js';
 
 function SideBar() {
     return (
-        <div className='container'>
-            <div className="col">
+        <div className='sidebar__container'>
+            <div>
                 <SideBarButton/>
                 <SideBarButton/>
                 <SideBarButton/>
