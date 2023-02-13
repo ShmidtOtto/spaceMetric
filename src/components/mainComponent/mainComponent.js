@@ -4,11 +4,11 @@ import Content from '../contentComponent/contentComponent.js';
 
 function Main(props) {
     return (
-        <div className="row">
-            <div className='col'>
+        <div className ="main">
+            <div className="sidebar">
                 <SideBar/>
             </div>
-            <div className='col'>
+            <div className="content">
                 <Content/>
             </div>
         </div>
