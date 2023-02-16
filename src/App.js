@@ -1,19 +1,16 @@
-import Header from './components/headerComponent/headerComponent.js';
+import { Routes, Route } from 'react-router-dom';
+import MainLayout from './layouts/mainLayout.js';
 import Main from './components/mainComponent/mainComponent.js';
-import Footer from './components/footerComponent/footerComponent.js';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-
 function App() {
   return (
-    <div className="app">
-      
-        <Header/>
-        <Main/>
-        <Footer/>
-    
-    </div>
+    <Routes className='app'>
+      <Route path='/' element={<MainLayout/>}>
+        <Route index element={<Main/>} />
+      </Route>
+    </Routes>
   );
 }
 
