@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/mainLayout.js';
 import Main from './components/mainComponent/mainComponent.js';
+import Login from './components/loginComponents/loginComponent.js';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -9,6 +10,7 @@ function App() {
     <Routes className='app'>
       <Route path='/' element={<MainLayout/>}>
         <Route index element={<Main/>} />
+        <Route path='login' element={<Login/>}/>
       </Route>
     </Routes>
   );
